@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner";
 import SmallCard from "../components/SmallCard";
 
-export default function Home({ exploreData }) {
+export default function Home({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
@@ -30,6 +30,14 @@ export default function Home({ exploreData }) {
             ))}
           </div>
         </section>
+
+        <section>
+          <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
+
+          {cardsData?.map((item) => (
+            <MediumCard />
+          ))}
+        </section>
       </main>
     </div>
   );
@@ -40,9 +48,14 @@ export async function getStaticProps() {
     res.json()
   );
 
+  const cardsData = await fetch("https://jsonkeeper.com/b/VHHT").then((res) =>
+    res.json()
+  );
+
   return {
     props: {
       exploreData,
+      cardsData,
     },
   };
 }
