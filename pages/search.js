@@ -40,6 +40,7 @@ function Search({ searchResults }) {
                 startDate,
                 price,
                 total,
+                star,
               }) => (
                 <InfoCard
                   key={img}
@@ -50,6 +51,7 @@ function Search({ searchResults }) {
                   startDate={startDate}
                   price={price}
                   total={total}
+                  star={star}
                 />
               )
             )}
