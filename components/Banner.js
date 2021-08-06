@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Banner() {
   return (
-    <div className="relative h-[18.75rem] sm:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] 2xl:h-[43.75]">
+    <div className="relative h-[18.75rem] sm:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] 2xl:h-[43.75rem]">
       <Image
         src="https://a0.muscache.com/im/pictures/57b9f708-bb12-498c-bc33-769f8fc43e63.jpg"
         layout="fill"
