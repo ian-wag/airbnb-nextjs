@@ -61,11 +61,11 @@ function Header({ placeholder }) {
       </div>
 
       {/* middle - Search*/}
-      <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm">
+      <div className="flex items-center md:border-2 rounded-full py-2 md:shadow-sm overflow-x-hidden sm:overflow-x-visible ml-0.5 sm:-ml-0">
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          className="flex-grow pl-5 bg-transparent outline-none text-[.75rem] text-gray-600 placeholder-gray-400 md:text-sm"
+          className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
           type="text"
           placeholder={placeholder || "Start your search"}
         />
