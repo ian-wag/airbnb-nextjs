@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 import "react-date-range/dist/styles.css"; // main style file
 import "react-date-range/dist/theme/default.css"; // theme css file
-import { DateRangePicker } from "react-date-range";
+import { DateRange, DefinedRange } from "react-date-range";
 import { useRouter } from "next/dist/client/router";
 
 function Header({ placeholder }) {
@@ -65,7 +65,7 @@ function Header({ placeholder }) {
         <input
           value={searchInput}
           onChange={(e) => setSearchInput(e.target.value)}
-          className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
+          className="flex-grow pl-5 bg-transparent outline-none text-[.75rem] text-gray-600 placeholder-gray-400 md:text-sm"
           type="text"
           placeholder={placeholder || "Start your search"}
         />
@@ -75,7 +75,7 @@ function Header({ placeholder }) {
       {/* right */}
       <div className="flex items-center space-x-4 justify-end text-gray-500">
         <p className="hidden md:inline cursor-pointer">Become a host</p>
-        <GlobeAltIcon className="h-6 cursor-pointer" />
+        <GlobeAltIcon className="h-6 cursor-pointer hidden md:inline" />
 
         <div className="flex items-center space-x-2 border-2 p-2 rounded-full">
           <MenuIcon className="h-6" />
@@ -85,7 +85,7 @@ function Header({ placeholder }) {
 
       {searchInput && (
         <div className="flex flex-col col-span-3 mx-auto">
-          <DateRangePicker
+          <DateRange
             ranges={[selectionRange]}
             minDate={new Date()}
             rangeColors={["#FD5B61"]}
