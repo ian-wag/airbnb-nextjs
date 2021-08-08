@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+//olympic background https://a0.muscache.com/im/pictures/e4a2a61c-589f-4e49-b3b8-968a6bc23389.jpg
 function Banner() {
   return (
     <div className="relative h-[18.75rem] sm:h-[25rem] lg:h-[31.25rem] xl:h-[37.5rem] 2xl:h-[43.75rem]">
