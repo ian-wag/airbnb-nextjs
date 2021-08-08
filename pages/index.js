@@ -14,7 +14,7 @@ export default function Home({ exploreData, cardsData }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1"
         />
-        <title>Airbnb Clone | By Me</title>
+        <title>Airbnb Clone | By Ian Wagner</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

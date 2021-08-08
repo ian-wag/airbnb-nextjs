@@ -53,11 +53,12 @@ function Footer() {
           </p>
         </div>
       </div>
-      <div className="space-y-4 text-xs text-gray-800 mx-6 px-[6.5rem] py-5 flex items-baseline border-t">
+      <div className="space-y-4 text-xs text-gray-800 mx-6 px-[6.5rem] py-5 flex items-baseline border-t flex-wrap">
         <p>2021</p>
         <p className="mx-1">·</p>
         <p className="hover:underline hover:cursor-pointer">
           <a
+            className="whitespace-nowrap"
             href="https://github.com/iwagner76/airbnb-nextjs/"
             target="_blank"
             rel="noreferrer"
