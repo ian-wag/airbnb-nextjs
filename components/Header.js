@@ -85,7 +85,7 @@ function Header({ placeholder }) {
 
       {searchInput && (
         <div className="flex flex-col col-span-3 mx-auto">
-          <div className="lg:hidden">
+          <div className="md:hidden">
             <DateRange
               ranges={[selectionRange]}
               minDate={new Date()}
@@ -93,7 +93,7 @@ function Header({ placeholder }) {
               onChange={handleSelect}
             />
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <DateRangePicker
               ranges={[selectionRange]}
               minDate={new Date()}
