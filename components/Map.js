@@ -53,7 +53,7 @@ function Map({ searchResults }) {
               longitude={result.long}
               className="z-50"
             >
-              <div className=" relative p-12 bg-black">
+              <div className=" relative p-12 bg-black w-80 h-32">
                 <Image
                   src={result.img}
                   layout="fill"
@@ -61,7 +61,9 @@ function Map({ searchResults }) {
                   className="pb-1"
                 />
               </div>
-              <p className="font-semibold text-lg">{result.title}</p>
+              <p className="font-semibold text-lg w-80 break-words">
+                {result.title}
+              </p>
               <p className="text-sm">{result.total}</p>
             </Popup>
           ) : (
